@@ -30,5 +30,5 @@ echo " ------------ END ------------"
 # noumi0k/mac-auto-setup.git
 #
 echo " ------------ noumi0k/mac-auto-setup.git ------------"
-git clone https://github.com/AkkeyLab/mac-auto-setup.git
+git clone https://github.com/ha-kun/mac-auto-setup.git
 echo " ------------ END ------------"
