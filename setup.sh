@@ -51,6 +51,7 @@ echo " ------------ END ------------"
 #
 # Install ruby
 #
+<< EOS
 echo " ----------- Ruby ------------"
 brew install rbenv
 brew install ruby-build
@@ -62,6 +63,7 @@ rbenv global $ruby_latest
 rbenv rehash
 ruby -v
 echo " ------------ END ------------"
+EOS
 
 #
 # Install dotfiles system
@@ -75,6 +77,7 @@ echo " ------------ END ------------"
 #
 # Install Node.js env
 #
+<< EOS
 echo " ---------- Node.js ----------"
 curl -L git.io/nodebrew | perl - setup
 nodebrew ls-remote
@@ -84,17 +87,21 @@ nodebrew use latest
 node -v
 npm -v
 echo " ------------ END ------------"
+EOS
 
 #
 # Install Yarn
 #
+<< EOS
 echo " ----------- Yarn ------------"
 brew install yarn
 echo " ------------ END ------------"
+EOS
 
 #
 # TeX settings
 #
+<< EOS
 echo " ------------ TeX ------------"
 brew cask install mactex
 # Tex Live Utility > preference > path -> /Library/TeX/texbin
@@ -108,6 +115,7 @@ echo $pass | sudo -S mktexlsr
 echo $pass | sudo -S kanji-config-updmap-sys hiragino-elcapitan-pron
 # Select ==> TeXShop > Preferences > Source > pTeX (ptex2pdf)
 echo " ------------ END ------------"
+EOS
 
 #
 # Install wget
@@ -120,17 +128,21 @@ echo " ------------ END ------------"
 #
 # CocoaPods
 #
+<< EOS
 echo " --------- CocoaPods ---------"
 echo $pass | sudo -S gem install -n /usr/local/bin cocoapods --pre
 pod setup
 echo " ------------ END ------------"
+EOS
 
 #
 # Carthage
 #
+<< EOS
 echo " --------- Carthage ----------"
 brew install carthage
 echo " ------------ END ------------"
+EOS
 
 while true; do
   read -p 'Now install web apps? [Y/n]' Answer
