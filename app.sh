@@ -46,11 +46,11 @@ brew cask install google-japanese-ime
 # brew cask install hockey
 # brew cask install soundflower
 brew cask install adobe-acrobat-pro
+brew cask install intellij-idea
 
 << NOCASKAPP
 eonkyo Downloader
 Hi-Res Audio Player
-IntelliJ IDEA
 mora downloader
 Riplt
 Scansnap
@@ -61,6 +61,7 @@ subsonic
 qfinder
 NOCASKAPP
 
+<< EOS
 while true; do
   read -p 'Add "need license" apps? [Y/n]' Answer
   case $Answer in
@@ -104,3 +105,4 @@ while true; do
   esac
 done;
 echo " ------------ END ------------"
+EOS
