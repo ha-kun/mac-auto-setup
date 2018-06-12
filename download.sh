@@ -14,7 +14,9 @@ EOS
 echo " --------- Homebrew ----------"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
-brew upgrade --all --cleanup
+# brew upgrade --all is disabled
+# brew upgrade --all --cleanup
+brew upgrade --cleanup
 brew -v
 echo " ------------ END ------------"
 
