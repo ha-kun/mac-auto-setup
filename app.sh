@@ -47,6 +47,8 @@ brew cask install google-japanese-ime
 # brew cask install soundflower
 brew cask install adobe-acrobat-pro
 brew cask install intellij-idea
+brew cask install dynalist
+brew cask install notable
 
 << NOCASKAPP
 eonkyo Downloader
