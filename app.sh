@@ -49,6 +49,7 @@ brew cask install adobe-acrobat-pro
 brew cask install intellij-idea
 brew cask install dynalist
 brew cask install notable
+brew cask install 1password
 
 << NOCASKAPP
 eonkyo Downloader
